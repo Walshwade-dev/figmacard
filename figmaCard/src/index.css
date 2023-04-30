@@ -1,0 +1,359 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+nav .name {
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: x-large;
+  margin-top: -1rem;
+  padding-inline: 1rem;
+}
+
+.nav-list li {
+  cursor: pointer;
+}
+
+.name {
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: xx-large;
+}
+
+.name2 {
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: xx-large;
+  
+}
+
+.hero-image{
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -80%);
+
+  max-width: 300px;
+
+}
+
+.hero-text{
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -20%);
+}
+
+
+.hero-large-text {
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: large;
+
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-40%, 40%);
+}
+
+
+.arrow-down {
+  width: 0.005rem;
+  height: 4rem;
+  background-color: #FFC165;
+  position: absolute;
+  left: 50%;
+  bottom: 0rem;
+}
+
+
+#mouse-scroll {
+  display: block;
+}
+
+#mouse-scroll {
+  position: fixed;
+  margin: auto;
+  left: 50%;
+  bottom: 80px;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+#mouse-scroll span{
+  display: block;
+  width: 5px; 
+  height: 5px;
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-right: 2px solid #FFC165; 
+  border-bottom: 2px solid #89ffff;
+  margin: 0 0 3px 5px;
+}
+#mouse-scroll .mouse {
+  height: 21px;
+  width: 14px;
+  border-radius: 10px;
+  transform: none;
+  transform: none;
+  transform: none;
+  border: 2px solid #01adad;
+  top: 170px;
+}
+#mouse-scroll .down-arrow-1 {
+  margin-top: 6px;
+}
+#mouse-scroll .down-arrow-1, #mouse-scroll .down-arrow-2, #mouse-scroll .down-arrow-3 {
+  animation: mouse-scroll 1s infinite; 
+  animation: mouse-scroll 1s infinite;
+}
+#mouse-croll .down-arrow-1 {
+  animation-delay: .1s; 
+  animation-delay: .1s;
+  animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-2 {
+  animation-delay: .2s; 
+  animation-delay: .2s;
+  animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-3 {
+   animation-delay: .3s;
+   animation-delay: .3s;
+   animation-direction: alternate;
+}
+#mouse-scroll .mouse-in {
+  height: 5px;
+  width: 2px;
+  display: block; 
+  margin: 5px auto;
+  background: #FFC165;
+  position: relative;
+}
+#mouse-scroll .mouse-in {
+  animation: animated-mouse 1.2s ease infinite;
+  animation: mouse-animated 1.2s ease infinite;
+}
+
+@keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(6px);
+    transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 390px){
+  .hero-image{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -80%);
+  }
+  
+  .hero-text{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -20%);
+  }
+
+  .arrow-down {
+    width: 0.005rem;
+    height: 5rem;
+    background-color: #FFC165;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .name {
+    margin-top: 2rem;
+    margin-left: 8%;
+  }
+  
+  .hero-large-text {
+    top: 10%;
+    left: 30%;
+    transform: translate(-40%, 40%);
+    font-size: x-large;
+  }
+  
+  .hero-image {
+    right: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+
+    max-width: 400px;
+  }
+
+  .arrow-down {
+    width: 0.005rem;
+    height: 5rem;
+    background-color: #FFC165;
+    position: absolute;
+    left: 50%;
+    bottom: 0rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+  .name-logo {
+    animation: slideRight 1s ease forwards;
+  }
+
+  .nav-list li {
+    transition: .3s;
+    animation: slideTop 0.5s ease backwards;
+  }
+
+  .nav-list li:nth-child(1){
+    animation-delay: 0s;
+  }
+  .nav-list li:nth-child(2){
+    animation-delay: 0.1s;
+  }
+  .nav-list li:nth-child(3){
+    animation-delay: 0.2s;
+  }
+  .nav-list li:nth-child(4){
+    animation-delay: 0.3s;
+  }
+
+  .hero-large-text {
+    top: 20%;
+    left: 20%;
+    transform: translate(-40%, 40%);
+
+    font-size: large;
+    max-width: 45rem;
+    
+  }
+
+  .hero-large-text h1 {
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0.7s;
+  }
+
+  .hero-large-text h3 {
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+  }
+
+  .hero-large-text h3:nth-of-type(2) {
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0.7s;
+  }
+
+  .setup {
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1.2s;
+  }
+
+  .punchline {
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1.4s;
+  }
+
+  .hero-image{
+    left: 70%;
+    top: 30%;
+    transform: translate(-80%, 50%);
+
+    max-width: 450px;
+
+
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+  }
+
+  /* KEYFRAMES ANIMATION*/
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+ 
+
+  @keyframes slideTop {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideBottom {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
