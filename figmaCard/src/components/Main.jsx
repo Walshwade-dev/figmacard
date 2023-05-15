@@ -1,5 +1,5 @@
 //Main section
-import displayImage  from '../assets/wade2.png';
+import displayImage  from '../assets/wade8.png';
 
 export default function Main() {
     
@@ -12,10 +12,20 @@ export default function Main() {
 
     return(
         <div>
-            <div className='mx-5 mt-5 '>
-                <img src={displayImage} alt="profile-pic"  className='md:hidden lg:block hero-image h-[23rem] w-[20rem] border border-none rounded-[8rem] '/>
+            <div className='md:hidden lg:inline-block -mx-10 mt-28 bg-teal-900 box'>
+                <div className='content bg-teal-900'>
+                    <div><img src={displayImage} alt="profile-pic" className='box-image object-cover h-[60rem] w-[20rem] mt-60 '/></div>
+                    <div className='content-text'>
+                        <h3 className='text-teal-400 tracking-tight uppercase'>
+                            <span className=' text-[#FFC165] pr-1'>{greet()}</span>
+                            Alien, nice to meet you.<br/>
+                            <span className='px-6'>lets create something awesome</span>
+                        </h3>
+                        <p className='text-center '><a href='#' className='text-[#FFC165] uppercase font-bold underline'>Contact Wade</a></p>
+                    </div>     
+                </div>
             </div>
-            <div className='md:hidden  hero-text'>
+            <div className='md:hidden  hero-text bg-teal-900'>
                 <h3 className="name text-teal-400 text-5xl text-center tracking-wider mt-4">Walshwade</h3>
                 <h3 className="name2 text-teal-400 text-4xl text-center tracking-normal mt-0">chokwe</h3>
                 <h3 className="text-xl text-teal-600 font-sans  text-center  mt-0">Fullstack developer</h3>

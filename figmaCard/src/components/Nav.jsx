@@ -8,7 +8,7 @@ export default function Nav() {
 
             <ul className="hidden nav-list md:flex justify-end px-4 mr-4 font-semibold font-heading space-x-12">
                 <li data-index="0"><a className="hover:text-[#966d30]  text-[#FFC165]" >Home</a></li>
-                <li data-index="1"><a className="hover:text-[#966d30] text-[#FFC165]" >About</a></li>
+                <li data-index="1"><a className="hover:text-[#966d30] text-[#FFC165]" href="#About" >About</a></li>
                 <li data-index="2"><a className="hover:text-[#966d30] text-[#FFC165]" >Skills</a></li>
                 <li data-index="3"><a className="hover:text-[#966d30] text-[#ffb84d]" >Contact</a></li>
             </ul>
